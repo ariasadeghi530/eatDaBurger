@@ -1,0 +1,28 @@
+{
+  "name": "eatDaBurger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariasadeghi530/eatDaBurger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariasadeghi530/eatDaBurger/issues"
+  },
+  "homepage": "https://github.com/ariasadeghi530/eatDaBurger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-react-views": "^0.11.0",
+    "mysql2": "^2.1.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
+}
