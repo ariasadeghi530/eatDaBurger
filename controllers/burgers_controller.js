@@ -9,7 +9,8 @@ const burger = {
     });
   },
   insertOne(burger, cb) {
-    connection.query('INSERT INTO burgers SET ?', {burger_name: burger, devoured: false}, err => {
+    console.log(burger);
+    connection.query('INSERT INTO burgers SET ?', burger, (err) => {
       if (err) throw err;
       cb();
     });
