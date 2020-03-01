@@ -10,7 +10,6 @@ router.get('/burgers', (req, res) => {
 
 //POST a new burger
 router.post('/burgers', (req, res) => {
-  console.log(req.body);
   burger.insertOne(req.body, () => {
     res.sendStatus(200);
     console.log('added burger');

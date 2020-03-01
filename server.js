@@ -10,4 +10,9 @@ app.set('view engine', 'jsx');
 
 app.use(require('./routes'));
 
+app.get('/burgers', (req, res) => {
+  res.render('home');
+});
+
+
 app.listen(3000);
