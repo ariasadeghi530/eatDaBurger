@@ -42,7 +42,7 @@ $('#submit').click(function(event){
       method: 'POST',
       url: '/api/burgers',
       data: { burger_name: $('#textInput').val(),
-              devoured: false 
+              devoured: 0 
             }
     })
     .then(() => {
