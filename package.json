@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ariasadeghi530/eatDaBurger#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-react-views": "^0.11.0",
     "mysql2": "^2.1.0",
