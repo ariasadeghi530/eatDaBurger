@@ -6,12 +6,12 @@ $.ajax({
   url: '/api/burgers'
 })
   .then( (burgers) =>{
-    console.log(burgers);
+    
     $('#eaten').html('');
     $('#unEaten').html('');
     burgers.map(burger => {
       if(burger.devoured){
-        $('#eaten').append($('<li>').addClass('list-group-item').text(burger.burger_name));
+        $('#eaten').append($('<li>').addClass('list-group-item text-muted').text(burger.burger_name));
       }
       else {
         $('#unEaten').append($('<a><li>').addClass('list-group-item btn').attr('id', burger.id).text(burger.burger_name));
@@ -20,7 +20,7 @@ $.ajax({
   })
   .catch(e => console.log(e));
 }
-renderBurgers();
+
 
 $('#unEaten').click(function(event){
   $.ajax({
@@ -52,3 +52,5 @@ $('#submit').click(function(event){
   $('#textInput').val(''); 
   }
 });
+
+renderBurgers();
