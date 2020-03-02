@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const { join } = require('path');
 
@@ -13,7 +14,7 @@ app.set('view engine', 'jsx');
 
 app.use(require('./routes'));
 
-app.get('/burgers', (req, res) => {
+app.get('/', (req, res) => {
   res.render('home');
 });
 
